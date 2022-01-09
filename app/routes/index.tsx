@@ -18,7 +18,7 @@ export default function Index() {
     <div className="log">
       <h2>Daily Log</h2>
       <div>
-        <h3 id="2022-01-08">Jan 8, 2022</h3>
+        <h3 id="_2022-01-08">Jan 8, 2022</h3>
         <ul>
           <li>
             Halfway through{" "}
