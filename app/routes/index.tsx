@@ -1,6 +1,21 @@
+import styles from "../styles/log.css";
+
+export function links() {
+  return [
+    {
+      rel: "stylesheet",
+      href: "https://unpkg.com/modern-css-reset@1.4.0/dist/reset.min.css",
+    },
+    {
+      rel: "stylesheet",
+      href: styles,
+    },
+  ];
+}
+
 export default function Index() {
   return (
-    <div>
+    <div className="log">
       <h2>Daily Log</h2>
       <div>
         <h3 id="2022-01-08">Jan 8, 2022</h3>
