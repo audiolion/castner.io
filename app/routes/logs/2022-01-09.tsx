@@ -27,7 +27,7 @@ export default function L2021_01_09() {
           </a>
         </li>
         <li>
-          Quarter of the way through
+          Quarter of the way through{" "}
           <a
             href="https://www.learninpublic.org/"
             target="_blank"
