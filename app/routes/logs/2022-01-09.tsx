@@ -93,7 +93,7 @@ export default function L2021_01_09() {
         outcome would be crushing :(.
       </p>
       <p>
-        I have rambled on enough for now, I hear the puppy getting up to know
+        I have rambled on enough for now, I hear the puppy getting up to no
         good, until tomorrow.
       </p>
     </div>
