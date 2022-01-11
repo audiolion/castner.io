@@ -10,7 +10,7 @@ export function links() {
   ];
 }
 
-const logLinks = ["2022-01-08"];
+const logLinks = ["2022-01-08", "2022-01-09", "2022-01-10"];
 
 export default function Index() {
   return (
@@ -43,10 +43,12 @@ export default function Index() {
         </div>
       </div>
       <div className="logLinks">
-        {logLinks.map((logDate) => (
-          <Link key={logDate} to={`/logs/${logDate}`}>
-            Daily Log: {logDate}
-          </Link>
+        {logLinks.reverse().map((logDate) => (
+          <div>
+            <Link key={logDate} to={`/logs/${logDate}`}>
+              Daily Log: {logDate}
+            </Link>
+          </div>
         ))}
       </div>
     </div>
