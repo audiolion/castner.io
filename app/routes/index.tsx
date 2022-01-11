@@ -43,7 +43,7 @@ export default function Index() {
         </div>
       </div>
       <div className="logLinks">
-        {logLinks.reverse().map((logDate) => (
+        {[...logLinks].reverse().map((logDate) => (
           <div>
             <Link key={logDate} to={`/logs/${logDate}`}>
               Daily Log: {logDate}
