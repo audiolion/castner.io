@@ -9,7 +9,7 @@ export function links() {
   ];
 }
 
-export default function L2021_01_10() {
+export default function L2021_01_11() {
   return (
     <div className="log">
       <h1>Daily Log</h1>
