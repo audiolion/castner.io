@@ -20,6 +20,7 @@ const logLinks = [
   "2022-01-14",
   "2022-01-15",
   "2022-01-20",
+  "2022-01-25",
 ];
 
 export default function Index() {
