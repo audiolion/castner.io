@@ -9,7 +9,7 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
-import "./styles/global.css";
+import "./app.css";
 
 export const meta: Route.MetaFunction = () => {
   return [
@@ -22,26 +22,21 @@ export const meta: Route.MetaFunction = () => {
   ];
 };
 
-export const links: Route.LinksFunction = () => [
-  {
-    rel: "stylesheet",
-    href: "https://unpkg.com/modern-css-reset@1.4.0/dist/reset.min.css",
-  },
-];
-
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-white dark:bg-gray-900">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
       </head>
-      <body>
-        <nav>
+      <body className="mx-auto max-w-prose p-8 font-sans text-base leading-7 text-gray-900 dark:text-gray-100">
+        <nav className="pb-4">
           <Link to="/">
-            <div className="brand">castner.io</div>
+            <div className="font-mono text-3xl lowercase tracking-tight underline decoration-1 underline-offset-4">
+              castner.io
+            </div>
           </Link>
         </nav>
         {children}
@@ -74,10 +69,10 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 
   return (
     <main>
-      <h1>{message}</h1>
-      <p>{details}</p>
+      <h1 className="text-2xl font-bold">{message}</h1>
+      <p className="mt-2">{details}</p>
       {stack && (
-        <pre style={{ overflow: "auto", padding: "1rem" }}>
+        <pre className="mt-4 overflow-auto p-4 bg-gray-100 dark:bg-gray-800 rounded">
           <code>{stack}</code>
         </pre>
       )}

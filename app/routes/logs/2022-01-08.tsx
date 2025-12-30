@@ -1,6 +1,6 @@
 export function Log20220108() {
   return (
-    <div className="log">
+    <div className="prose prose-slate prose-a:text-blue-600 dark:prose-a:text-blue-400">
       <h1>Daily Log</h1>
       <h2>Jan 8, 2022</h2>
       <ul>
@@ -40,8 +40,8 @@ export function Log20220108() {
       </ul>
       <p>
         Lots of time spent reading today. And in the process found about thirty
-        new books to read. Really enjoying swyx's book, it has branched off
-        into so many topics that I want to take a deeper dive on.
+        new books to read. Really enjoying swyx's book, it has branched off into
+        so many topics that I want to take a deeper dive on.
       </p>
       <p>
         One of the concepts in the book encourages the reader to learn in

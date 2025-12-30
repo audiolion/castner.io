@@ -52,11 +52,31 @@ npm run build
 
 Deployment is done using the Wrangler CLI.
 
+### Authentication
+
+Before deploying, authenticate with your Cloudflare account:
+
+```sh
+npx wrangler login
+```
+
+This opens a browser window where you sign in to Cloudflare and authorize Wrangler.
+
+To verify authentication:
+
+```sh
+npx wrangler whoami
+```
+
+### Deploy to Production
+
 To build and deploy directly to production:
 
 ```sh
 npm run deploy
 ```
+
+### Preview Deployments
 
 To deploy a preview URL:
 

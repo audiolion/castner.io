@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import type { Route } from "./+types/home";
-import "../styles/home.css";
 
 const logDates = [
   "2022-01-08",
@@ -30,12 +29,13 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <div>
-      <div className="description">
+      <div className="grid grid-cols-[97px_minmax(min-content,40ch)] gap-4 text-lg">
         <div>
-          <div className="avatar">
+          <div className="size-24 rounded-full border-2 border-gray-600 dark:border-gray-400">
             <img
               src="/avatar.jpeg"
               alt="A circle avatar with Ryan Castner's face."
+              className="size-full rounded-full"
             />
           </div>
         </div>
@@ -46,6 +46,7 @@ export default function Home() {
               href="https://twitter.com/ryan_castner"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-blue-600 dark:text-blue-400 underline"
             >
               Ryan Castner
             </a>
@@ -57,10 +58,15 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="logLinks">
+      <div className="mt-12 space-y-6 text-xl">
         {[...logDates].reverse().map((logDate) => (
           <div key={logDate}>
-            <Link to={`/logs/${logDate}`}>Daily Log: {logDate}</Link>
+            <Link
+              to={`/logs/${logDate}`}
+              className="text-blue-600 dark:text-blue-400 underline"
+            >
+              Daily Log: {logDate}
+            </Link>
           </div>
         ))}
       </div>

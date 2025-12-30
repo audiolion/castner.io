@@ -1,5 +1,4 @@
 import type { Route } from "./+types/log";
-import "~/styles/log.css";
 
 import { Log20220108 } from "./logs/2022-01-08";
 import { Log20220109 } from "./logs/2022-01-09";

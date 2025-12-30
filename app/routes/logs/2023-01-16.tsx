@@ -1,6 +1,6 @@
 export function Log20230116() {
   return (
-    <div className="log">
+    <div className="prose prose-slate prose-a:text-blue-600 dark:prose-a:text-blue-400">
       <h1>Daily Log</h1>
       <h2>Jan 16, 2023</h2>
       <ul>
