@@ -1,15 +1,4 @@
-import logStyles from "../../styles/log.css";
-
-export function links() {
-  return [
-    {
-      rel: "stylesheet",
-      href: logStyles,
-    },
-  ];
-}
-
-export default function L2021_01_08() {
+export function Log20220108() {
   return (
     <div className="log">
       <h1>Daily Log</h1>
@@ -51,7 +40,7 @@ export default function L2021_01_08() {
       </ul>
       <p>
         Lots of time spent reading today. And in the process found about thirty
-        new books to read 😅. Really enjoying swyx's book, it has branched off
+        new books to read. Really enjoying swyx's book, it has branched off
         into so many topics that I want to take a deeper dive on.
       </p>
       <p>

@@ -1,15 +1,4 @@
-import logStyles from "../../styles/log.css";
-
-export function links() {
-  return [
-    {
-      rel: "stylesheet",
-      href: logStyles,
-    },
-  ];
-}
-
-export default function L2021_01_12() {
+export function Log20220112() {
   return (
     <div className="log">
       <h1>Daily Log</h1>

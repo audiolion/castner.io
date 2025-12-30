@@ -1,15 +1,4 @@
-import logStyles from "../../styles/log.css";
-
-export function links() {
-  return [
-    {
-      rel: "stylesheet",
-      href: logStyles,
-    },
-  ];
-}
-
-export default function L2021_01_10() {
+export function Log20220110() {
   return (
     <div className="log">
       <h1>Daily Log</h1>
@@ -39,7 +28,7 @@ export default function L2021_01_10() {
         super dehydrated! Downing a protein shake now after finishing an hour
         long kickboxing workout. I think I am going to sleep well tonight. I was
         able to finish Crucial Conversations today while driving to and picking
-        up Peach 🍑 from doggy daycare.
+        up Peach from doggy daycare.
       </p>
       <p>
         Had one of those fun JS dependency hell days doing a Jest 26 to 27

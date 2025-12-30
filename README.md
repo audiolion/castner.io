@@ -1,22 +1,79 @@
-# Welcome to Remix!
+# Welcome to React Router!
 
-- [Remix Docs](https://remix.run/docs)
+A modern, production-ready template for building full-stack React applications using React Router.
 
-## Development
+## Features
 
-You will be utlizing Wrangler for local development to emulate the Cloudflare runtime. This is already wired up in your package.json as the `dev` script:
+- 🚀 Server-side rendering
+- ⚡️ Hot Module Replacement (HMR)
+- 📦 Asset bundling and optimization
+- 🔄 Data loading and mutations
+- 🔒 TypeScript by default
+- 🎉 TailwindCSS for styling
+- 📖 [React Router docs](https://reactrouter.com/)
 
-```sh
-# start the remix dev server and wrangler
-$ npm run dev
+## Getting Started
+
+### Installation
+
+Install the dependencies:
+
+```bash
+npm install
 ```
 
-Open up [http://127.0.0.1:8788](http://127.0.0.1:8788) and you should be ready to go!
+### Development
+
+Start the development server with HMR:
+
+```bash
+npm run dev
+```
+
+Your application will be available at `http://localhost:5173`.
+
+## Previewing the Production Build
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Building for Production
+
+Create a production build:
+
+```bash
+npm run build
+```
 
 ## Deployment
 
-Cloudflare Pages are currently only deployable through their Git provider integrations.
+Deployment is done using the Wrangler CLI.
 
-If you don't already have an account, then [create a Cloudflare account here](https://dash.cloudflare.com/sign-up/pages) and after verifying your email address with Cloudflare, go to your dashboard and follow the [Cloudflare Pages deployment guide](https://developers.cloudflare.com/pages/framework-guides/deploy-anything).
+To build and deploy directly to production:
 
-Configure the "Build command" should be set to `npm run build`, and the "Build output directory" should be set to `public`.
+```sh
+npm run deploy
+```
+
+To deploy a preview URL:
+
+```sh
+npx wrangler versions upload
+```
+
+You can then promote a version to production after verification or roll it out progressively.
+
+```sh
+npx wrangler versions deploy
+```
+
+## Styling
+
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+
+---
+
+Built with ❤️ using React Router.
